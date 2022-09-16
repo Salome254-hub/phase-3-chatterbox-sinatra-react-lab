@@ -17,36 +17,38 @@ main.dark-mode {
   --bg-color-1: rgb(0, 0, 0);
   --bg-color-2: rgba(50, 50, 50);
   --bg-color-3: rgba(75, 75, 75);
-  --main-font-color: rgb(200, 200, 200);
-  --alt-font-color: rgb(255, 255, 255);
-  --theme-primary: rgba(91, 13, 232, 1);
+  --main-font-color: rgb(141, 239, 252);
+  --alt-font-color: black;
+  --theme-primary: rgb(13, 232, 214);
   --theme-primary-gradient: linear-gradient(
     90deg,
-    rgba(91, 13, 232, 1) 0%,
-    rgba(121, 101, 220, 1) 100%
+    rgb(18, 19, 18) 0%,
+    rgb(12, 12, 11) 100%
   );
 }
 
 * {
   margin: 0;
   padding: 0;
+  size: 500px;
 }
 
 body {
   font-size: 14px;
   font-family: "Helvetica", sans-serif;
-  background-color: rgb(155, 155, 155);
+  background-color: aquamarine;
+  
 }
 
 main {
-  display: grid;
-  max-width: 400px;
+  display:inline-flexbox;
+  max-width: 2000px;
   height: 500px;
   margin: 100px auto;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr auto;
   color: var(--main-font-color);
-  background-color: var(--bg-color-1);
+  background-color: grey;
   transition: all 0.5s;
   box-shadow: 5px 5px 15px -6px #8c8c8c;
 }
@@ -84,12 +86,13 @@ button[type="submit"] {
 
 /* Header */
 header {
-  padding: 0.5rem;
-  color: var(--alt-font-color);
+  padding: 10px;
+  color: aquamarine;
   background: var(--theme-primary-gradient);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 }
 
 header h1 {
